@@ -65,9 +65,7 @@ print(f'Make sure the files are all at: {home_address}/pi_to_potter/...')
 # You might not have this package.
 try:
     camera = Picamera2()
-pvw_config = cam.create_preview_configuration(main={"format": 'XRGB8888', "size": (640, 480)})
-cam.set_controls({"Saturation":0.0})
-cam.configure(pvw_config)
+
 cam.start()
 
 except BaseException:

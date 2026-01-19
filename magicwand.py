@@ -101,7 +101,7 @@ xEnd = 480
 ret, image_data = cap.read()
 frame_holder = image_data
 frame_no_background = image_data
-frame_holder = frame_holder[yStart:yEnd, xStart:xEnd]
+
 cv2.flip(frame_holder, 1, frame_holder)
 frame = None
 

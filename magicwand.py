@@ -66,7 +66,7 @@ print(f'Make sure the files are all at: {home_address}/pi_to_potter/...')
 try:
     camera = Picamera2()
 
-cam.start()
+camera.start()
 
 except BaseException:
     pass
